@@ -1,1 +1,11 @@
+In Unix Environment:
+
+Compile by typing in the command prompt:
+
+gcc -std=c99 -o base64enc base64enc.c
+
+Runnning by typing in the command prompt:
+./base64enc
+
+
 
