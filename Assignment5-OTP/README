@@ -1,0 +1,39 @@
+In Unix Environment
+
+Simulation of Client and Server Communication:
+- Sending request from client to server
+- Perform Encryption and Decription on server
+- Sending back the processed data back to client
+
+Compile all using:
+gcc -o enc_server enc_server.c
+gcc -o enc_client enc_client.c
+gcc -o dec_server dec_server.c
+gcc -o dec_client dec_client.c
+gcc -o keygen keygen.c
+
+1) enc_server.c
+- Encryption server
+- Syntax for running:
+  enc_server listening_port &
+  
+2) enc_client.c
+- Encryption client; send data to server and receive back the data
+- Syntax for running:
+  enc_client [text for encryption] [encryption key] port
+  
+3) dec_server.c
+- Decryption server
+- Syntax for running:
+  dec_server listening_port &
+  
+4) dec_client.c
+- Decryption client; send data to server and receive back the data
+- Syntax for running:
+  decc_client [text for decryption] [decryption key] port
+  
+ 5) keygen.c
+ - Generate characters in length (keylength) acting as the encryption and decryption key
+ - Syntax for running:
+ - keygen 256 > mykey
+
