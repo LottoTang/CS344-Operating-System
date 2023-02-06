@@ -1,1 +1,31 @@
+In Unix Environment
 
+To Parses files and directory structures to list files and directory contents recursively in a tree format;
+To implement basic sorting and print the file permissions, username, group, and file size.
+
+Compile:
+gcc -std=c99 -o tree tree.c 
+
+Run:
+./tree [Options] [Directory]
+
+E.g. ./tree -pugs /usr/share/man/en
+
+Options: (from Assignment Page)
+LISTING OPTIONS
+  -a    Print hidden files. By default, tree does not print hidden files beginning with a dot ('.') character.
+        The filesystem constructs `.' and `..' are never printed even with the -a option.
+  -d    Print only directories, no files.
+
+FILE OPTIONS
+  -p    Print permissions according to the mode string format specified for `ls' according to POSIX.
+  -u    Print the username, or UID # if no username is available, of the file.
+  -g    Print the group name, or GID # if no group name is available, of the file.
+  -s    Print the size of each file in bytes.
+
+SORTING OPTIONS (default: alphabetic sorting)
+  -r    Sort the output in reverse alphabetic order.
+  -t    Sort the output by last modification time instead of alphabetically.
+  -U    Do not sort. List files according to directory order.
+
+  -h    Print this message
